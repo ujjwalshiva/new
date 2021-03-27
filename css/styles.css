@@ -130,14 +130,15 @@
     align-items: center;
 }
 .front{
+    max-width: 100%;
+    max-height: 50%;
     position: absolute;
-    width: 50%;
-    height: 50%;
     background:#A6A6A6;
     transform: perspective(800px);
     backface-visibility: hidden;
     transition: all 0.5s;
     overflow: hidden;
+    padding:10%;
 }
 .box:hover .front{
     transform: rotateX(180deg);
@@ -153,8 +154,8 @@
 }
 .back{
     position: absolute;
-    width: 50%;
-    height: 50%;
+    max-width: 100%;
+    max-height: 50%;
     background: #A6A6A6;
     transform: perspective(800px) rotateY(0deg);
     backface-visibility: hidden;
